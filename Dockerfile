@@ -1,4 +1,4 @@
-FROM nginxinc/nginx-unprivileged:1-alpine
+FROM nginxinc/nginx-unprivileged:1.17.3-alpine
 LABEL maintainer="matiasg1982@gmail.com"
 
 COPY ./default.conf.tpl /etc/nginx/default.conf.tpl
