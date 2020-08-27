@@ -27,7 +27,7 @@ Build:
 Push Dev:
     stage: Push
     script:
-        - docker tag proxyt:latest $ECR_REPO:dev
+        - docker tag proxy:latest $ECR_REPO:dev
         - docker push $ECR_REPO:dev
     rules:
         - if: "$CI_COMMIT_BRANCH == 'master'"
