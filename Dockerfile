@@ -4,7 +4,7 @@ LABEL maintainer="matiasg1982@gmail.com"
 COPY ./default.conf.tpl /etc/nginx/default.conf.tpl
 COPY ./uwsgi_params /etc/nginx/uwsgi_params
 
-ENV LISTE_PORT=8000
+ENV LISTEN_PORT=8000
 ENV APP_HOST=app
 ENV APP_PORT=9000
 
